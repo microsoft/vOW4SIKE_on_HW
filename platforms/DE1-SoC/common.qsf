@@ -1,0 +1,56 @@
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+
+set_global_assignment -name SDC_FILE common.sdc
+
+# io_asyncReset using SW[0] switch
+set_location_assignment PIN_AB12 -to io_asyncReset
+
+# GPIO 0 header, note physical GPIO pin X != GPIO pin X listed
+# in the manual, use "DE1_Old_Board_User_Manual_use_for_GPIO_pinout.pdf"
+# to find mapping of physical GPIO pins to the pin numbers lised in DE1-SoC
+# manual.
+#
+# Physical pins are 1 to 40
+# "Logical" pins are 0 to 35, as some physical pins are tied to GND, 3.3v, or 5v
+
+# Using GPIO 0 header, physical pins 1, 2, 3, 4
+set_location_assignment PIN_AC18 -to io_jtag_tms
+set_location_assignment PIN_Y17  -to io_jtag_tdi
+set_location_assignment PIN_AD17 -to io_jtag_tdo
+set_location_assignment PIN_Y18  -to io_jtag_tck
+
+# Not sure what most of these do, not assigned
+#
+# set_location_assignment PIN_ -to [31:0] io_gpioA_read
+# set_location_assignment PIN_ -to [31:0] io_gpioA_write
+# set_location_assignment PIN_ -to [31:0] io_gpioA_writeEnable
+
+# According to scripts/Murax/iCE40HX8K-EVB/toplevel.v two of the io_gpioA_write
+# signals are connected to LEDs, maybe different on Cyclone V... trying anyway.
+# LED 1:
+set_location_assignment PIN_W16 -to io_gpioA_write[0]
+# LED 1:
+set_location_assignment PIN_V17 -to io_gpioA_write[7]
+
+# For UART using GPIO 0 header, physical pins 5, 6
+# pin 5:
+set_location_assignment PIN_AK16 -to io_uart_txd
+# pin 6:
+set_location_assignment PIN_AK18 -to io_uart_rxd
+
+# For clock, using CLOCK_50, a 50MHz clock input
+set_location_assignment PIN_AF14 -to io_mainClk
+
+# Some random Quartus settings
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Standard Edition"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+

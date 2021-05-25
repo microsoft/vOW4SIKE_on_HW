@@ -1,0 +1,1 @@
+This folder contains the Scala source code for generating Murax SoC and hardware accelerators (as peripherals of the Murax SoC), for more details about how to use Murax SoC, please check: https://github.com/SpinalHDL/VexRiscv

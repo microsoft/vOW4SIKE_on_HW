@@ -1,0 +1,5 @@
+*.mem
+*.txt
+*.vcd
+top_tb
+*.sage.py

@@ -1,0 +1,9 @@
+*.log 
+*.bin 
+*.mem 
+synth_system.bit 
+usage_statistics_webtalk.html 
+usage_statistics_webtalk.xml 
+vivado.jou 
+fsm_encoding.os 
+*.jou

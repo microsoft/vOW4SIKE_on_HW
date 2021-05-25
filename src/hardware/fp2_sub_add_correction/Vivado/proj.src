@@ -1,0 +1,7 @@
+../../util/clog2.v
+../../util/single_port_mem.v
+../../util/delay.v 
+../fp2_sub_add_correction.v
+../serial_comparator.v 
+../../fp_sub_and_add/fp_adder.v
+../../fp_sub_and_add/unit_adder.v

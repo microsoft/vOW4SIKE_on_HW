@@ -1,0 +1,6 @@
+*.txt
+*.mem
+controller_tb
+controller_tb.vcd
+gen_test.sage.py
+serial_comparator.v
