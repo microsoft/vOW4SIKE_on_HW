@@ -199,7 +199,7 @@ The outputs are displayed in the minicom window (Step 2).
 - - -
 ## Contributors
 
-[Wen Wang](http://caslab.csl.yale.edu/~wen/): wen.wang.ww349@yale.edu 
+- Wen Wang 
  
 
 ## References 
