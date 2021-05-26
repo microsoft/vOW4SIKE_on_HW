@@ -26,19 +26,24 @@ relative to AES and SHA-3.
 - - -
 ## File Organization
 
-- `platform/AC701/` contains hardware development files targeting the Artix-7 AC701 XC7A200TFBG676 FPGA.
+- `platforms/AC701/` contains hardware development files targeting the Artix-7 AC701 XC7A200TFBG676 FPGA.
  
 - `platforms/Murax/` contains the scala source code for generating the Murax SoC.
 
 - `platforms/rtl` contains the APB bridge modules developed for the communication between the software and hardware.
 
-- `src/hardware` contains hardware accelerators source code.
+- `Python_script` contains the Python3 script for the security estimation of SIKE relative to AES and SHA-3.
 
-- `src/murax` contains Murax library files.
+- `SIKE_sw` contains the software implementation of SIKE, including the new parameter sets SIKEp377, SIKEp546 and SIKEp697.
 
-- `src/ref_c` contains the software implementation of vOW on SIKE, which is based on [3] and the [vOW4SIKE library](https://github.com/microsoft/vOW4SIKE).
+- `SIKE_vOW_hw-sw/hardware` contains the hardware accelerators source code.
 
-- `src/ref_c_riscv` contains the software libraries for calling the hardware accelerators and RISC-V testing files.
+- `SIKE_vOW_hw-sw/murax` contains the Murax library files.
+
+- `SIKE_vOW_hw-sw/ref_c` contains the software implementation of vOW on SIKE, which is based on [3] and the [vOW4SIKE library](https://github.com/microsoft/vOW4SIKE).
+
+- `SIKE_vOW_hw-sw/ref_c_riscv` contains the hardware/software co-design of vOW on SIKE. 
+  It contains the software libraries for calling the hardware accelerators and RISC-V testing files.
 
 - `LICENSE` MIT license covering all the implementations, except for the files that are labeled as created by third parties.
 
