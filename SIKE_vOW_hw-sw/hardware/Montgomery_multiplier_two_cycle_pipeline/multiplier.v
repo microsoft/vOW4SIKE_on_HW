@@ -1,4 +1,3 @@
-/* Released to the public domain */
 
 (* use_dsp = "yes" *) module multiplier
 #(

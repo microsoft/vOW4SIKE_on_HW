@@ -1,4 +1,4 @@
-/* Released to the public domain */
+/* Released under MIT license */
 
 `define CLOG2(x) ( \
   (x <= 2) ? 1 : \

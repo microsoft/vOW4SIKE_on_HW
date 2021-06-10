@@ -1,5 +1,3 @@
-/* Released to the public domain */
-
 // single-ported memory, in one clock, can either do one read, or one write. 
 // => only one memory access at a time.
 

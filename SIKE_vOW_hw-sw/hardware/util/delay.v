@@ -1,9 +1,7 @@
-/* Released to the public domain */
-
 /* 
  * Author:        Ruben Niederhagen <ruben@polycephaly.org>  
  * Abstract:      module for adding delay
- * 
+ * License:       MIT
 */
 
 module delay
