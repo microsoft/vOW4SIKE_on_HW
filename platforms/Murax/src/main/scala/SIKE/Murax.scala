@@ -39,7 +39,6 @@ case class MuraxConfig(coreFrequency                     : HertzNumber,
                        onChipRamHexFile                  : String, 
                        // Apb3MontgomeryMultiplier          : Boolean,
                        Apb3Fp2MontMultiplier             : Boolean,
-                       Apb3SHAKE                         : Boolean,
                        Apb3Controller                    : Boolean,
                        pipelineDBus                      : Boolean,
                        pipelineMainBus                   : Boolean,
@@ -61,7 +60,6 @@ object MuraxConfig{
     onChipRamSize            = 400 kB, //200 kB, 
     // Apb3MontgomeryMultiplier = false, 
     Apb3Fp2MontMultiplier    = false, 
-    Apb3SHAKE                = false,
     Apb3Controller           = false,
     onChipRamHexFile         = null, 
     pipelineDBus             = true, // before: false > true
@@ -298,11 +296,6 @@ case class Murax(config : MuraxConfig) extends Component{
        apbMapping += Montgomery_multiplier.io.apb -> (0x30000, 4 kB)
     }
 
-    if (config.Apb3SHAKE) {
-       val keccak_top = new Apb3SHAKE()
-       apbMapping += keccak_top.io.apb -> (0x40000, 4 kB)
-    }
-
     if (config.Apb3Controller) {
        val top_controller = new Apb3Controller()
        apbMapping += top_controller.io.apb -> (0x50000, 4 kB)
@@ -363,15 +356,7 @@ object MuraxMontgomeryMultiplier{
     )
   }
 }
-
-object MuraxSHAKE{
-  def main(args: Array[String]) {
-    SpinalConfig.shell(args).copy(netlistFileName = "MuraxSHAKE.v").generate(
-          Murax(MuraxConfig.default.copy(Apb3SHAKE=true))
-               .setDefinitionName("MuraxSHAKE")
-    )
-  }
-} 
+ 
 
 object MuraxController{
   def main(args: Array[String]) {
@@ -390,14 +375,6 @@ object MuraxControllerMontgomeryMultiplier{
     )
   }
 } 
-
-object MuraxControllerMontgomeryMultiplierSHAKE{
-  def main(args: Array[String]) {
-    SpinalConfig.shell(args).copy(netlistFileName = "MuraxControllerMontgomeryMultiplierSHAKE.v").generate(
-          Murax(MuraxConfig.default.copy(Apb3Controller=true, Apb3Fp2MontMultiplier=true, Apb3SHAKE=true))
-               .setDefinitionName("MuraxControllerMontgomeryMultiplierSHAKE")
-    )
-  }
-} 
+ 
   
 
