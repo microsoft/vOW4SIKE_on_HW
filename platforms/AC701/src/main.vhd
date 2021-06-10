@@ -1,4 +1,4 @@
-/* Released under GNU GPLv3 license */
+--- Released under GNU GPLv3 license ---
 
 ---
  --- Author:        Ruben Niederhagen <ruben@polycephaly.org >  
