@@ -8,6 +8,8 @@
 * Abstract: Core functions over GF(p) and GF(p^2)
 *********************************************************************************************/
 
+#include <string.h>
+
 
 int8_t ct_compare(const uint8_t *a, const uint8_t *b, unsigned int len) 
 { // Compare two byte arrays in constant time.
