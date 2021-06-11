@@ -274,6 +274,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>__WINDOWS__; _X86_; _GENERIC_;</PreprocessorDefinitions>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -289,6 +290,7 @@
       <PreprocessorDefinitions>__WINDOWS__; _GENERIC_; _AMD64_;</PreprocessorDefinitions>
       <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

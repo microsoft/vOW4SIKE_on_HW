@@ -1,0 +1,28 @@
+## Ignore temporary files and build results
+
+# User-specific files
+*.suo
+*.user
+
+# Build results
+Debug/
+Fast/
+Generic/
+lib434/
+lib503/
+lib610/
+lib751/
+objs/
+objs434/
+objs434comp/
+objs503/
+objs503comp/
+objs610/
+objs610comp/
+objs751/
+objs751comp/
+
+# Visual Studio cache directory and files
+.vs/
+*.VC.db
+*.VC.VC.opendb
