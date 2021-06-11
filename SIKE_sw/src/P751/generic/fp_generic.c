@@ -1,9 +1,12 @@
 /********************************************************************************************
-* SIDH: an efficient supersingular isogeny cryptography library 
+* vOW4SIKE on HW: a HW/SW co-design implementation of the vOW algorithm on SIKE
 * Copyright (c) Microsoft Corporation
 *
-* Website: https://github.com/microsoft/PQCrypto-SIDH
+* Website: https://github.com/microsoft/vOW4SIKE_on_HW
 * Released under MIT license
+*
+* Based on the SIDH library (https://github.com/microsoft/PQCrypto-SIDH) and the vOW4SIKE
+* library (https://github.com/microsoft/vOW4SIKE)
 *
 * Abstract: portable modular arithmetic for P751
 *********************************************************************************************/
