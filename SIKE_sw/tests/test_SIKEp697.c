@@ -1,5 +1,11 @@
 /********************************************************************************************
-* NEW benchmarking/testing isogeny-based key encapsulation mechanism SIKEp697
+* SIDH: an efficient supersingular isogeny cryptography library 
+* Copyright (c) Microsoft Corporation
+*
+* Website: https://github.com/microsoft/PQCrypto-SIDH
+* Released under MIT license
+*
+* Abstract: benchmarking/testing isogeny-based key encapsulation mechanism SIKEp697
 *********************************************************************************************/ 
 
 #include <stdio.h>
