@@ -230,28 +230,28 @@ lib751: $(OBJECTS_751)
 	$(RANLIB) lib751/libsidh.a
 
 tests: lib377 lib434 lib503 lib546 lib610 lib697 lib751
-	$(CC) $(CFLAGS) -L./lib377 tests/arith_tests-p377.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p377 $(ARM_SETTING)
-	$(CC) $(CFLAGS) -L./lib434 tests/arith_tests-p434.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p434 $(ARM_SETTING)
-	$(CC) $(CFLAGS) -L./lib503 tests/arith_tests-p503.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p503 $(ARM_SETTING)
-	$(CC) $(CFLAGS) -L./lib546 tests/arith_tests-p546.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p546 $(ARM_SETTING)
-	$(CC) $(CFLAGS) -L./lib610 tests/arith_tests-p610.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p610 $(ARM_SETTING)
-	$(CC) $(CFLAGS) -L./lib697 tests/arith_tests-p697.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p697 $(ARM_SETTING)
-	$(CC) $(CFLAGS) -L./lib751 tests/arith_tests-p751.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p751 $(ARM_SETTING)
+	$(CC) $(CFLAGS) -L./lib377 tests/arith_tests-p377.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p377
+	$(CC) $(CFLAGS) -L./lib434 tests/arith_tests-p434.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p434
+	$(CC) $(CFLAGS) -L./lib503 tests/arith_tests-p503.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p503
+	$(CC) $(CFLAGS) -L./lib546 tests/arith_tests-p546.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p546
+	$(CC) $(CFLAGS) -L./lib610 tests/arith_tests-p610.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p610
+	$(CC) $(CFLAGS) -L./lib697 tests/arith_tests-p697.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p697
+	$(CC) $(CFLAGS) -L./lib751 tests/arith_tests-p751.c tests/test_extras.c -lsidh $(LDFLAGS) -o arith_tests-p751
 	
 tests_sike377: lib377
-	$(CC) $(CFLAGS) -L./lib377 tests/test_SIKEp377.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike377/test_SIKE $(ARM_SETTING)
+	$(CC) $(CFLAGS) -L./lib377 tests/test_SIKEp377.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike377/test_SIKE
 tests_sike434: lib434
-	$(CC) $(CFLAGS) -L./lib434 tests/test_SIKEp434.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike434/test_SIKE $(ARM_SETTING)
+	$(CC) $(CFLAGS) -L./lib434 tests/test_SIKEp434.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike434/test_SIKE
 tests_sike503: lib503
-	$(CC) $(CFLAGS) -L./lib503 tests/test_SIKEp503.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike503/test_SIKE $(ARM_SETTING)
+	$(CC) $(CFLAGS) -L./lib503 tests/test_SIKEp503.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike503/test_SIKE
 tests_sike546: lib546
-	$(CC) $(CFLAGS) -L./lib546 tests/test_SIKEp546.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike546/test_SIKE $(ARM_SETTING)
+	$(CC) $(CFLAGS) -L./lib546 tests/test_SIKEp546.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike546/test_SIKE
 tests_sike610: lib610
-	$(CC) $(CFLAGS) -L./lib610 tests/test_SIKEp610.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike610/test_SIKE $(ARM_SETTING)
+	$(CC) $(CFLAGS) -L./lib610 tests/test_SIKEp610.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike610/test_SIKE
 tests_sike697: lib697
-	$(CC) $(CFLAGS) -L./lib697 tests/test_SIKEp697.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike697/test_SIKE $(ARM_SETTING)
+	$(CC) $(CFLAGS) -L./lib697 tests/test_SIKEp697.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike697/test_SIKE
 tests_sike751: lib751
-	$(CC) $(CFLAGS) -L./lib751 tests/test_SIKEp751.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike751/test_SIKE $(ARM_SETTING)
+	$(CC) $(CFLAGS) -L./lib751 tests/test_SIKEp751.c tests/test_extras.c -lsidh $(LDFLAGS) -o sike751/test_SIKE
 
 tests_sike: tests_sike377 tests_sike434 tests_sike503 tests_sike546 tests_sike610 tests_sike697 tests_sike751
 
