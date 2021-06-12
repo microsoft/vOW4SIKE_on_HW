@@ -41,6 +41,7 @@ relative to AES and SHA-3.
 - `SIKE_vOW_hw-sw/murax` contains the Murax library files.
 
 - `SIKE_vOW_hw-sw/ref_c` contains the software implementation of vOW on SIKE, which is based on [3] and the [vOW4SIKE library](https://github.com/microsoft/vOW4SIKE).
+  This implementation is used by the hardware/software co-design in `src/ref_c_riscv`, but can also be run standalone in software.
 
 - `SIKE_vOW_hw-sw/ref_c_riscv` contains the hardware/software co-design of vOW on SIKE. 
   It contains the software libraries for calling the hardware accelerators and RISC-V testing files.
