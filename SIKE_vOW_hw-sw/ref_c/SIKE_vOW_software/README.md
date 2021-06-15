@@ -21,7 +21,33 @@ To use AES instead, comment out the define for USE_XXHASH_XOF in `\src\prng.h`, 
 To compile and run the assembly-optimized code on Linux, use the following commands.
 The code assumes a 64-bit architecture is being targeted.
 
-make tests_vow_sike
-./test_vOW_SIKE_128 -h
-./test_vOW_SIKE_377 -h
-./test_vOW_SIKE_434 -h
+```bash
+make tests_vow_sikeXXX
+./test_vOW_SIKE_XXX -s -h
+```
+
+Where XXX is any option in {128, 377, 434}. 
+
+The option -h displays the options for the command.
+The option -s allows to run one single function version and collect some statistics.
+If this option is not used, the attack is run for multiple function versions but restricted to isogenies with artificially shortened degrees
+(e.g., by default e = 20 for P377 and P434. See `\SIKE_vOW_hw-sw\ref_c\SIKE_vOW_software\src\sike_vow_constants.c`). 
+Expect a short execution for P128, but not for the larger primes. 
+
+It is also possible to run some tests to check the arithmetic and computation of SIKE.
+
+To test the field arithmetic, use the following commands: 
+
+```bash
+make clean
+make tests
+./arith_tests-pXXX
+```
+
+To run and test SIKE, use the following commands: 
+
+```bash
+make clean
+make tests_sike
+./sikeXXX/test_SIKE
+```
