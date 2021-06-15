@@ -1,9 +1,9 @@
-# Software implementation of SIKE 
-# Paper "The Cost to Break SIKE: A Comparative Hardware-Based Analysis with AES and SHA-3"
+# Software implementation of SIKE
 
-This library contains efficient C implementations of the CCA-secure key encapsulation mechanism "SIKE". 
-This scheme is conjectured to be secure against quantum computer attacks.
-The software is based on the SIDH library version 3.3 (https://github.com/microsoft/PQCrypto-SIDH).
+This library contains efficient C implementations of the CCA-secure key encapsulation mechanism SIKE [2], 
+which is a scheme that is conjectured to be secure against classical and quantum computer attacks.
+The software is based on the [SIDH library](https://github.com/microsoft/PQCrypto-SIDH), version 3.4,
+but additionally contains the new paremeter sets proposed in [1]. 
 
 This library includes the following KEM schemes:
 
@@ -55,3 +55,10 @@ $ ./arith_tests-pXXX
 $ ./sikeXXX/test_SIKE
 ```
 
+## References 
+
+[1] David Jao, Reza Azarderakhsh, Matthew Campagna, Craig Costello, Luca De Feo, Basil Hess, Aaron Hutchinson, Amir Jalali, Koray Karabina, Brian Koziel, Brian LaMacchia, Patrick Longa, Michael Naehrig, Geovandro Pereira, Joost Renes, Vladimir Soukharev, David Urbanik:
+SIKE: Supersingular Isogeny Key Encapsulation, [`https://sike.org`](https://sike.org).
+
+[2] Patrick Longa, Wen Wang, Jakub Szefer: The Cost to Break SIKE: A Comparative Hardware-Based Analysis with AES and SHA-3, CRYPTO 2021,
+[`https://eprint.iacr.org/2020/1457`](https://eprint.iacr.org/2020/1457).
