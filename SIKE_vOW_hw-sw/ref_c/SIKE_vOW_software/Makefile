@@ -219,12 +219,14 @@ $(DEPENDENT_OBJS_128):
 
 DEPENDENT_OBJS_377=objs/sike_vow377.o objs/sike_vow_constants377.o
 objs/sike_vow377.o: src/sike_vow.c
+objs/sike_vow_constants377.o: src/sike_vow_constants.c
 $(DEPENDENT_OBJS_377):
 	@mkdir -p $(@D)
 	$(CC) -c $(CFLAGS) -D P377 $< -o $@
 
 DEPENDENT_OBJS_434=objs/sike_vow434.o objs/sike_vow_constants434.o
 objs/sike_vow434.o: src/sike_vow.c
+objs/sike_vow_constants434.o: src/sike_vow_constants.c
 $(DEPENDENT_OBJS_434):
 	@mkdir -p $(@D)
 	$(CC) -c $(CFLAGS) -D P434 $< -o $@
