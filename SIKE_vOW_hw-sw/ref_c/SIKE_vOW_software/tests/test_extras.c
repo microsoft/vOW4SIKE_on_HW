@@ -56,7 +56,7 @@ static uint64_t p751[12] = { 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFFFFFFFFF, 0xFFFFFFFFF
 #define NBITS_FIELD697    697
 #define NBITS_FIELD751    751
 
-#if !defined(HRDW)
+
 int64_t cpucycles(void)
 { // Access system counter for benchmarking
 #if (OS_TARGET == OS_WIN) && (TARGET == TARGET_AMD64 || TARGET == TARGET_x86)
@@ -75,7 +75,7 @@ int64_t cpucycles(void)
     return 0;            
 #endif
 }
-#endif
+
 
 int compare_words(digit_t* a, digit_t* b, unsigned int nwords)
 { // Comparing "nword" elements, a=b? : (1) a>b, (0) a=b, (-1) a<b
