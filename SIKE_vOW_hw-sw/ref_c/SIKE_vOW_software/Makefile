@@ -333,13 +333,13 @@ vow_sike128: objs/sike_vow128.o objs/prng.o objs/sike_vow_constants128.o objs/xx
 	$(AR) vow_sike/libvow_sike.a $^
 	$(RANLIB) vow_sike/libvow_sike.a
 
-vow_sike377: objs/sike_vow377.o objs/prng.o objs/sike_vow_constants.o objs/xxhash.o objs/fips202.o $(AES_OBJS)
+vow_sike377: objs/sike_vow377.o objs/prng.o objs/sike_vow_constants377.o objs/xxhash.o objs/fips202.o $(AES_OBJS)
 	rm -rf vow_sike
 	mkdir vow_sike
 	$(AR) vow_sike/libvow_sike.a $^
 	$(RANLIB) vow_sike/libvow_sike.a
 
-vow_sike434: objs/sike_vow434.o objs/prng.o objs/sike_vow_constants.o objs/xxhash.o objs/fips202.o $(AES_OBJS)
+vow_sike434: objs/sike_vow434.o objs/prng.o objs/sike_vow_constants434.o objs/xxhash.o objs/fips202.o $(AES_OBJS)
 	rm -rf vow_sike
 	mkdir vow_sike
 	$(AR) vow_sike/libvow_sike.a $^
