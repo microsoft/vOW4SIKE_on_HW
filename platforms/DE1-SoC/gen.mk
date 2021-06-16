@@ -14,10 +14,10 @@ SK_MEM_DEPTH = 32 # fixed
 
 DSP=yes
 
-MONTMUL_ONE_CYCLE_PATH = ../../src/hardware/Montgomery_multiplier_one_cycle_pipeline
-MONTMUL_TWO_CYCLE_PATH = ../../src/hardware/Montgomery_multiplier_two_cycle_pipeline
-ADD_SOURCE_RTL = ../../src/hardware/fp2_sub_add_correction
-TOP_CONTROLLER_RTL = ../../src/hardware/top_controller
+MONTMUL_ONE_CYCLE_PATH = ../../SIKE_vOW_hw-sw/hardware/Montgomery_multiplier_one_cycle_pipeline
+MONTMUL_TWO_CYCLE_PATH = ../../SIKE_vOW_hw-sw/hardware/Montgomery_multiplier_two_cycle_pipeline
+ADD_SOURCE_RTL = ../../SIKE_vOW_hw-sw/hardware/fp2_sub_add_correction
+TOP_CONTROLLER_RTL = ../../SIKE_vOW_hw-sw/hardware/top_controller
 
 RTL = ../rtl
 

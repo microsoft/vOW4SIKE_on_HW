@@ -6,5 +6,5 @@ set_global_assignment -name TOP_LEVEL_ENTITY Murax
 # HDL source code files
 set_global_assignment -name VERILOG_FILE Murax.v
 set_global_assignment -name VERILOG_FILE ../rtl/BlockRam.v
-set_global_assignment -name VERILOG_FILE ../../src/hardware/util/delay.v
+set_global_assignment -name VERILOG_FILE ../../SIKE_vOW_hw-sw/hardware/util/delay.v
 
