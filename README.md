@@ -213,7 +213,7 @@ The outputs are displayed in the minicom window (Step 2).
 [1] David Jao, Reza Azarderakhsh, Matthew Campagna, Craig Costello, Luca De Feo, Basil Hess, Aaron Hutchinson, Amir Jalali, Koray Karabina, Brian Koziel, Brian LaMacchia, Patrick Longa, Michael Naehrig, Geovandro Pereira, Joost Renes, Vladimir Soukharev, David Urbanik:
 SIKE: Supersingular Isogeny Key Encapsulation, [`https://sike.org`](https://sike.org).
 
-[2] Patrick Longa, Wen Wang, Jakub Szefer: The Cost to Break SIKE: A Comparative Hardware-Based Analysis with AES and SHA-3, CRYPTO 2021 (to appear),
+[2] Patrick Longa, Wen Wang, Jakub Szefer: The Cost to Break SIKE: A Comparative Hardware-Based Analysis with AES and SHA-3, CRYPTO 2021,
 [`https://eprint.iacr.org/2020/1457`](https://eprint.iacr.org/2020/1457).
 
 [3] Craig Costello, Patrick Longa, Michael Naehrig, Joost Renes, Fernando Virdia: Improved Classical Cryptanalysis of SIKE in Practice, PKC 2020,
