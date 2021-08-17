@@ -1,4 +1,5 @@
---- Released under GNU GPLv3 license ---
+--- Released under MIT license 
+--- Website: https://caslab.csl.yale.edu/code/qtesla-hw-sw-platform/
 
 ---
  --- Author:        Ruben Niederhagen <ruben@polycephaly.org >  
