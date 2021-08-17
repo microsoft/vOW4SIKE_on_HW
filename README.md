@@ -6,7 +6,7 @@ the RISC-V platform called [Murax SoC](https://github.com/SpinalHDL/VexRiscv/blo
 It includes especially-tailored, ASIC-friendly hardware accelerators 
 for the large-degree isogeny computation, which is the single most-critical operation in the cryptanalysis of SIKE.
 
-This library, which is released for experimentation purposes only, is used to estimate the classical security of SIKE parameter sets
+This library, which is released for experimentation purposes, is used to estimate the classical security of SIKE parameter sets
 in [2], and can be used as basis for a real-world, large-scale cryptanalytic effort on SIKE.
 The library also includes the implementation of new, more efficient SIKE parameter sets, and Python scripts for the security estimation of SIKE
 relative to AES and SHA-3.
