@@ -203,7 +203,7 @@ make TARGET=$(TARGET) PROJ=test_vOW_SIKE run
 The outputs are displayed in the minicom window (Step 2).
 
 - - -
-## Contributors
+## Other contributors
 
 - Wen Wang 
  
